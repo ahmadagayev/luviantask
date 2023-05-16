@@ -1,0 +1,14 @@
+#whatsap-video-modal-opener {
+  /* position: sticky; */
+  position: fixed;
+  left: 30px;
+  /* bottom: 30px; */
+  top: 80%;
+  z-index: 1000001 !important;
+  width: 95px;
+}
+@media (max-width: 768px) {
+  #whatsap-video-modal-opener {
+    display: none !important;
+  }
+}

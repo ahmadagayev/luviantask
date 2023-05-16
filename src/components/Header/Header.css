@@ -1,0 +1,243 @@
+#header {
+  width: 100%;
+  background-color: #fff;
+}
+
+#header .menu {
+  display: flex;
+}
+
+#header .info {
+  margin-left: auto;
+}
+
+#header ul {
+  display: flex;
+  align-items: baseline;
+  margin-bottom: 0;
+}
+
+#header ul li {
+  margin-right: 25px;
+}
+
+#header .info ul li {
+  margin-left: 25px;
+  margin-right: 0;
+}
+
+#header ul li a {
+  font-size: 12px;
+  font-weight: 500;
+  line-height: 3;
+  color: #777;
+  margin-bottom: auto;
+  display: flex;
+  align-items: center;
+  transition: 0.5s;
+}
+
+#header .lang_list_item a {
+  display: inherit;
+}
+
+#header ul li a .icon {
+  position: relative;
+}
+
+#header ul li span {
+  margin-left: 5px;
+}
+
+.topbar_count {
+  position: absolute;
+  left: 20px;
+  top: -10px;
+  color: red;
+}
+#header-bottom-section {
+  background-color: #ff003c;
+}
+
+#header-bottom-section {
+  background-color: #ffffff !important;
+}
+.sticky {
+  position: fixed;
+  top: 0;
+  z-index: 999;
+  width: 100%;
+  height: fit-content;
+}
+#header-bottom-section.sticky {
+  border-bottom: 2px solid rgba(0, 0, 0, 0.08);
+}
+#header-bottom-section .container {
+  position: relative;
+}
+
+#sidebar {
+  border: 2px solid rgba(0, 0, 0, 0.08);
+  background-color: #fff;
+  position: relative;
+  z-index: 100;
+}
+
+#sidebar.sidebar-section {
+  position: absolute;
+  top: 80px;
+  left: 190px;
+  transform: scaleY(0);
+  transform-origin: top;
+  transition: 0.5s;
+}
+header #sidebar.sidebar-section {
+  left: 0;
+  top: 110px;
+  z-index: 999999;
+}
+.v-mob {
+  display: none;
+}
+#sidebar .v-mob {
+  display: none !important;
+  margin: 40px 10px 20px;
+}
+
+#sidebar .v-mob .search-form .form-group {
+  margin-bottom: 0;
+}
+#product-view .product-status,
+.undertitle_icon_a,
+#title-search-input,
+.title,
+#product-view .price {
+  cursor: default;
+}
+#sidebar .v-mob .search-form .form-group input {
+  border-radius: 3px;
+  height: 45px;
+  padding: 15px 40px 15px 10px;
+  position: relative;
+  border: 1px solid #ff003c;
+}
+
+.selectHolder {
+  position: relative;
+  width: auto;
+}
+#sidebar .v-mob .selectHolder {
+  z-index: 100;
+  width: 70px !important;
+  margin-left: auto;
+}
+.selectHolder select {
+  width: 0px !important;
+  height: 0 !important;
+  border: 0;
+}
+.selectHolder .select_header {
+  color: #000;
+  border: 1px solid #000;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  cursor: pointer;
+  font-size: 20px;
+  padding: 8px 16px;
+  transition: 0.5s;
+  position: relative;
+  z-index: 1;
+  background: #fff;
+}
+#sidebar .v-mob .selectHolder h5 {
+  border: 1px solid #ff003c;
+  color: #ff003c;
+  font-size: 14px;
+  border-radius: 4px;
+  background-color: #fff;
+  margin-bottom: 0;
+  height: 45px;
+  font-weight: 700;
+}
+.selectHolder .select_body_holder {
+  max-height: 0;
+  position: absolute;
+  overflow: hidden;
+  transition: 0.5s;
+  width: 100%;
+  border-top-style: hidden;
+  background: #fff;
+  z-index: 6;
+}
+#sidebar .v-mob .selectHolder .select_body_holder {
+  border-radius: 0 0 4px 4px;
+  background-color: #fff;
+  color: #282828;
+  border: 1px solid #fff;
+}
+.selectHolder .select_body {
+  list-style-type: none;
+  overflow: auto;
+  font-size: 18px;
+  transition: 0.5s;
+  width: 100%;
+  max-height: 166px;
+}
+#sidebar .v-mob .selectHolder .select_body_holder ul {
+  display: block;
+}
+.selectHolder .select_body li {
+  padding: 5px 15px;
+  cursor: pointer;
+  transition: 0.5s;
+  background: inherit;
+  color: #000;
+}
+#sidebar .v-mob .selectHolder .select_body_holder ul li {
+  padding: 0;
+  height: auto;
+  font-size: 14px;
+  color: #282828;
+  margin: 5px 0;
+}
+.product-menu {
+  width: 100%;
+  margin-bottom: 0;
+  background-color: #fff;
+  position: relative;
+}
+
+@media (max-width: 768px) {
+  header {
+    padding-bottom: 80px;
+  }
+}
+@media (max-width: 991.98px) {
+  #header ul li {
+    margin-left: 10px;
+  }
+}
+
+@media (min-width: 1020px) and (max-width: 1500px) {
+  #header ul li {
+    margin-right: 10px;
+  }
+}
+@media (max-width: 1024px) {
+  .v-desktop {
+    display: none;
+  }
+  .page-header #header-bottom-section {
+    display: none;
+  }
+}
+@media (min-width: 1025px) {
+  #sidebar {
+    display: block !important;
+  }
+  .col-mm-2 {
+    flex: 0 0 16.66667%;
+    max-width: 16.66667%;
+  }
+}

@@ -1,0 +1,101 @@
+/* .carousel-item {
+  width: fit-content;
+  display: flex;
+} */
+/* .slick-slide{
+  max-width: 280px !important;
+} */
+.shop-slider {
+  position: relative;
+}
+.shop-slider .all-offers {
+  position: absolute;
+  height: 60px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  left: 0;
+  bottom: -60px;
+  top: calc(100% - 10px);
+  background-color: #f0f1f2;
+  border: 2px solid rgba(0, 0, 0, 0.08);
+}
+.slider-carousel {
+  width: 100%;
+  border: 2px solid rgba(0, 0, 0, 0.08);
+  /* border-right: none;
+  border-bottom: none; */
+  overflow-y: initial;
+  margin-bottom: 60px;
+  position: relative;
+}
+.slick-slide > div {
+  margin: 0 10px;
+}
+.slick-list {
+  margin: 0 -10px;
+}
+.slick-prev {
+  display: none !important;
+}
+
+.slick-next {
+  display: none !important;
+}
+.slick-list,
+.slick-slider {
+  position: relative;
+  display: block;
+}
+.slick-dots {
+  position: absolute;
+
+  text-align: center;
+  display: flex !important;
+  justify-content: flex-end;
+  top: 102%;
+  z-index: 1;
+}
+.slick-dots li {
+  position: relative;
+  display: inline-block;
+  margin: 0 5px;
+  padding: 0;
+}
+.slick-dots li,
+.slick-dots li button {
+  width: 20px;
+  height: 20px;
+  cursor: pointer;
+}
+.slick-dots li button {
+  font-size: 0;
+  line-height: 0;
+  display: block;
+  padding: 5px;
+  color: transparent;
+  border: 0;
+  outline: none;
+  background: transparent;
+}
+.slick-dots li button:before {
+  font-family: slick;
+  font-size: 25px;
+  line-height: 20px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 20px;
+  height: 20px;
+  content: "\2022";
+  text-align: center;
+  opacity: 0.25;
+  color: #000;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+.slick-dots li.slick-active button:before {
+  opacity: 0.75;
+  color: #000;
+}

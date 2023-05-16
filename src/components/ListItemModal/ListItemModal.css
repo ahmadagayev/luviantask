@@ -1,0 +1,28 @@
+
+.position-relative {
+  position: relative !important;
+}
+.daily-discount-inner {
+  overflow-x: hidden;
+  overflow-y: visible;
+  padding-bottom: 65px;
+  margin-bottom: -60px;
+}
+.section-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.section-header.single {
+  margin-bottom: 10px;
+}
+.section-header .head1 {
+  font-size: 26px;
+  font-weight: 700;
+  color: #282828;
+  margin-bottom: 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  min-width: 200px;
+}

@@ -1,0 +1,28 @@
+#header-bottom-section .section-menu {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.menu-icon {
+  background-color: transparent;
+  border: none;
+  height: 40px;
+  margin-right: 10px;
+}
+#header-bottom-section .section-menu .menu-icon {
+  height: 80px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: 0.5s;
+}
+
+#header-bottom-section .section-menu p {
+  font-size: 14px;
+  font-weight: 500;
+  color: #282828;
+}
+#header-bottom-section .section-menu .menu-icon p {
+  margin-left: 10px;
+}
